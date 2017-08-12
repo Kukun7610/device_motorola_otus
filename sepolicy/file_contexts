@@ -1,0 +1,10 @@
+# Binaries
+/system/bin/stml0xx_wrapper.sh                              u:object_r:stml0xx_exec:s0
+
+# Partitions
+/dev/block/bootdevice/by-name/frp                           u:object_r:frp_block_device:s0
+
+# Sensors
+/dev/stml0xx                                                u:object_r:sensors_device:s0
+/dev/stml0xx_as                                             u:object_r:sensors_device:s0
+/dev/stml0xx_ms                                             u:object_r:sensors_device:s0
