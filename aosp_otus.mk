@@ -1,7 +1,7 @@
 $(call inherit-product, device/motorola/otus/full_otus.mk)
 
 # Inherit some common DOSP stuff.
-$(call inherit-product, vendor/dosp/common.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Build Type
 EXTENDED_BUILD_TYPE=EXPERIMENTAL
