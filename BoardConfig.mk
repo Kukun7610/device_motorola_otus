@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +21,7 @@
 LOCAL_PATH := device/motorola/otus
 
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
-TARGET_KERNEL_CONFIG := cm_otus_defconfig
+TARGET_KERNEL_CONFIG := otus_defconfig
 
 # Storage & partiiton
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
