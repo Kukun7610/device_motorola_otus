@@ -51,3 +51,6 @@ TARGET_POWERHAL_VARIANT := qcom
 # SEPolicy
 BOARD_SEPOLICY_DIRS += \
     $(LOCAL_PATH)/sepolicy
+    
+# Properties
+TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
