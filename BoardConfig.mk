@@ -18,7 +18,7 @@
 -include device/motorola/msm8610-common/BoardConfigCommon.mk
 
 
-LOCAL_PATH := device/motorola/otus
+LOCAL_PATH := AOSPA/device/motorola/otus
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := xt1505,xt1506,otus_umts,otus_umtsds,otus,otus_ds
@@ -29,7 +29,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_otus
 
 # Kernel
 TARGET_KERNEL_CONFIG := cm_otus_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8610
+TARGET_KERNEL_SOURCE := AOSPA/kernel/motorola/msm8610
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CROSS_COMPILE_PREFIX :=/UBERTC/arm-linux-androideabi-5.3/bin/arm-linux-androideabi-
 
 # Storage & partiiton
@@ -43,6 +44,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.qcom
 
+# Power
+TARGET_POWERHAL_VARIANT := qcom
 
 
 # SEPolicy
