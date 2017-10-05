@@ -19,7 +19,13 @@
 #
 # Everything in this directory will become public
 
-LOCAL_PATH := device/motorola/otus
+# Inherit from msm8916-common
+$(call inherit-product, device/motorola/msm8610-common/msm8610.mk)
+
+# Screen density
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+
+LOCAL_PATH := AOSPA/device/motorola/otus
 
 # device specific vendor blobs
 $(call inherit-product-if-exists, vendor/motorola/otus/otus-vendor.mk)
@@ -32,15 +38,15 @@ $(call inherit-product-if-exists, vendor/motorola/otus/otus-vendor.mk)
 PRODUCT_COPY_FILES += \
      $(call find-copy-subdir-files,*,${LOCAL_PATH}/prebuilt/system,system)
 
-DEVICE_PACKAGE_OVERLAYS := \
+
+DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Support FRP features (enable bootloader unlock etc.)
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    ro.frp.pst=/dev/block/platform/msm_sdcc.1/by-name/frp
 
-# Inherit from msm8610-common
-$(call inherit-product, device/motorola/msm8610-common/msm8610.mk)
+
 
 # CMActions
 # PRODUCT_PACKAGES += \
@@ -49,3 +55,7 @@ $(call inherit-product, device/motorola/msm8610-common/msm8610.mk)
 # Email
 #PRODUCT_PACKAGES += \
 #    Email
+
+# Telephony-ext
+PRODUCT_PACKAGES += telephony-ext
+PRODUCT_BOOT_JARS += telephony-ext
