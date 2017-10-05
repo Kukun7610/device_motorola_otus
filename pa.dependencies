@@ -1,15 +1,15 @@
 [
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_device_motorola_osprey",
-        "target_path":  "device/motorola/osprey",
-        "revision":     "nougat-mr2"
+        "repository":   "Kukun7610/device_motorola_otus",
+        "target_path":  "device/motorola/otus",
+        "revision":     "pa-7x"
     },
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_device_motorola_msm8916-common",
-        "target_path":  "device/motorola/msm8916-common",
-        "revision":     "nougat-mr2"
+        "repository":   "Kukun7610/android_device_motorola_msm8610-common",
+        "target_path":  "device/motorola/msm8610-common",
+        "revision":     "cm-14.1"
     },
     {
         "remote":      "github",
@@ -19,31 +19,31 @@
     },
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_kernel_motorola_msm8916",
-        "target_path":  "kernel/motorola/msm8916",
-        "revision":     "nougat-mr2"
+        "repository":   "Kukun7610/android_kernel_motorola_msm8610",
+        "target_path":  "kernel/motorola/msm8610",
+        "revision":     "cm-14.1"
     },
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_hardware_qcom_audio",
+        "repository":   "Kukun7610/android_hardware_qcom_audio",
         "target_path":  "hardware/qcom/audio",
-        "revision":     "nougat-mr2-8916"
+        "revision":     "nougat-mr2-8974"
     },
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_hardware_qcom_display",
+        "repository":   "Kukun7610/android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "revision":     "nougat-mr2-8916"
+        "revision":     "nougat-mr2-8974"
     },
     {
         "remote":       "github",
-        "repository":   "ishubhamsingh/android_hardware_qcom_media",
+        "repository":   "Kukun7610/android_hardware_qcom_media",
         "target_path":  "hardware/qcom/media",
-        "revision":     "nougat-mr2-8916"
+        "revision":     "nougat-mr2-8974"
     },
     {
         "remote":      "github",
-        "repository":  "TheMuppets/proprietary_vendor_motorola",
+        "repository":  "Kukun7610/proprietary_vendor_motorola",
         "target_path": "vendor/motorola",
         "revision":      "cm-14.1"
     },
