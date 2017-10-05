@@ -23,8 +23,8 @@
 # Inherit from otus device
 $(call inherit-product, device/motorola/otus/device.mk)
 
-PRODUCT_NAME := full_otus
 PRODUCT_DEVICE := otus
+PRODUCT_NAME := full_otus
 
 # Inherit Motorola vendor
 $(call inherit-product-if-exists, vendor/motorola/otus/otus-vendor.mk)
