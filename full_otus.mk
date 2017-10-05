@@ -23,6 +23,7 @@
 # Inherit from otus device
 $(call inherit-product, device/motorola/otus/device.mk)
 
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := otus
 PRODUCT_NAME := full_otus
 
