@@ -25,7 +25,7 @@ $(call inherit-product, device/motorola/msm8610-common/msm8610.mk)
 # Screen density
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-LOCAL_PATH := AOSPA/device/motorola/otus
+LOCAL_PATH := /device/motorola/otus
 
 # device specific vendor blobs
 $(call inherit-product-if-exists, vendor/motorola/otus/otus-vendor.mk)
